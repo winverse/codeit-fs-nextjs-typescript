@@ -48,7 +48,7 @@ export default function PostForm({
   function handleAuthorChange(event: any) {
     setFormData((previousState: any) => ({
       ...previousState,
-      authorId: Number(event.target.value),
+      authorId: event.target.value,
     }));
   }
 

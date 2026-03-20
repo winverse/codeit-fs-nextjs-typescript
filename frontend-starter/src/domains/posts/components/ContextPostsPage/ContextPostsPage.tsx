@@ -34,7 +34,7 @@ function ContextPostsWorkspace() {
       title: 'Context에서 추가한 임시 포스트',
       content:
         '이 시작본은 Provider props, createContext 제네릭, mountedRef 패턴에 any가 남아 있는 상태입니다.',
-      authorId: 4,
+      authorId: 'author-4',
     };
 
     setPosts((previousPosts: any) => [nextPost, ...previousPosts]);
