@@ -1,14 +1,14 @@
 import { watchFile } from "node:fs";
 import { resolve } from "node:path";
-import { App } from "./node_modules/.pnpm/node_modules/@tinyhttp/app/dist/index.js";
-import { cors } from "./node_modules/.pnpm/node_modules/@tinyhttp/cors/dist/index.js";
-import { Low } from "./node_modules/.pnpm/node_modules/lowdb/lib/index.js";
-import { JSONFile } from "./node_modules/.pnpm/node_modules/lowdb/lib/node.js";
-import { parseWhere } from "./node_modules/json-server/lib/parse-where.js";
+import { App } from "@tinyhttp/app";
+import { cors } from "@tinyhttp/cors";
+import { Low } from "lowdb";
+import { JSONFile } from "lowdb/node";
+import { parseWhere } from "json-server/lib/parse-where.js";
 import {
   isItem,
   Service,
-} from "./node_modules/json-server/lib/service.js";
+} from "json-server/lib/service.js";
 
 const PORT = Number.parseInt(
   process.env.PORT ?? "4000",

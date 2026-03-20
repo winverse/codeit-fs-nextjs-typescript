@@ -8,6 +8,9 @@
     "start": "node server.mjs"
   },
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "@tinyhttp/app": "^3.0.6",
+    "@tinyhttp/cors": "^2.0.1",
+    "json-server": "^1.0.0-beta.3",
+    "lowdb": "^7.0.1"
   }
 }
