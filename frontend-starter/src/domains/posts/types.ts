@@ -17,6 +17,6 @@ export interface PostPage {
 }
 
 export interface AuthorOption {
-  value: number;
+  value: string;
   label: string;
 }
